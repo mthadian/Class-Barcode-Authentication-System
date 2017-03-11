@@ -1,0 +1,3 @@
+D:\project\UnivSys\UnivSys\obj\x64\Debug\Interop.ActiveDs.dll
+D:\project\UnivSys\UnivSys\obj\x64\Debug\Interop.ADOR.dll
+D:\project\UnivSys\UnivSys\obj\x64\Debug\Interop.FPSpread.dll

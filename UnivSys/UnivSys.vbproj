@@ -1,0 +1,356 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4564095C-FE0C-40CA-99D0-E165542734E1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>UnivSys.frmMain</StartupObject>
+    <RootNamespace>UnivSys</RootNamespace>
+    <AssemblyName>UnivSys</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>UnivSys.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>UnivSys.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Release\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppEvents.vb" />
+    <Compile Include="ConnectionModule.vb" />
+    <Compile Include="ConnectionStringsModule.vb" />
+    <Compile Include="frmClass.Designer.vb">
+      <DependentUpon>frmClass.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmClass.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClassLogin.Designer.vb">
+      <DependentUpon>frmClassLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmClassLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCourses.Designer.vb">
+      <DependentUpon>frmCourses.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCourses.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDepartments.Designer.vb">
+      <DependentUpon>frmDepartments.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDepartments.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDephead.Designer.vb">
+      <DependentUpon>frmDephead.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDephead.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFaculties.Designer.vb">
+      <DependentUpon>frmFaculties.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmFaculties.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLecForm.Designer.vb">
+      <DependentUpon>frmLecForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLecForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLecLogin.Designer.vb">
+      <DependentUpon>frmLecLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLecLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.vb">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.vb">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegLecs.Designer.vb">
+      <DependentUpon>frmRegLecs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegLecs.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegStudents.Designer.vb">
+      <DependentUpon>frmRegStudents.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegStudents.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStudentForm.Designer.vb">
+      <DependentUpon>frmStudentForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmStudentForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUnits.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUnits.Designer.vb">
+      <DependentUpon>frmUnits.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InterfaceSys.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Settings.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmClass.resx">
+      <DependentUpon>frmClass.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmClassLogin.resx">
+      <DependentUpon>frmClassLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCourses.resx">
+      <DependentUpon>frmCourses.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDepartments.resx">
+      <DependentUpon>frmDepartments.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDephead.resx">
+      <DependentUpon>frmDephead.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFaculties.resx">
+      <DependentUpon>frmFaculties.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLecForm.resx">
+      <DependentUpon>frmLecForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLecLogin.resx">
+      <DependentUpon>frmLecLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegLecs.resx">
+      <DependentUpon>frmRegLecs.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegStudents.resx">
+      <DependentUpon>frmRegStudents.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStudentForm.resx">
+      <DependentUpon>frmStudentForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUnits.resx">
+      <DependentUpon>frmUnits.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AccessibilityCplAdminLib">
+      <Guid>{714DD4F6-7676-4BDE-925A-C2FEC2073F36}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="ActiveDs">
+      <Guid>{97D25DB0-0363-11CF-ABC4-02608C9E7553}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="ADODB">
+      <Guid>{EF53050B-882E-4776-B643-EDA472E8E3F2}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="ADOMD">
+      <Guid>{22813728-8BD3-11D0-B4EF-00A0C9138CA4}</Guid>
+      <VersionMajor>6</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="ADOR">
+      <Guid>{00000300-0000-0010-8000-00AA006D2EA4}</Guid>
+      <VersionMajor>6</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AxFPSpread">
+      <Guid>{FDAC2480-F4ED-4632-AA78-DCA210A74E49}</Guid>
+      <VersionMajor>3</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="FPSpread">
+      <Guid>{FDAC2480-F4ED-4632-AA78-DCA210A74E49}</Guid>
+      <VersionMajor>3</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sav.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SNAP6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aspnet_mvc_blue_background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vbEdxzD.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background-learner.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background-learner1.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
